@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(teahub.io-taj-mahal-hd-wallpaper-3204131.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+.logo{
+width: 25%;
+text-align: center;
+color: white;
+}
+.menu{
+    width: 40%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    
+}
+    a{
+        width: 25%;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        
+    }
+    main{
+        width: 100%;
+        height: 85vh; 
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    h3{
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 1px 2px black;
+    
+    }
+    h1{
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 2px,1px,5px black;
+        margin: 30px 0 28px 0;
+    }
+p{
+    font-size: 25px;
+     text-shadow: 1px,1px,5px black;
+      word-spacing: 2px;
+      margin-bottom: 25px;
+}
+section a{
+    padding: 12px 30px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.bot1{background-color: white;
+    color: #000;
+
+}
+.bot2{
+    background: #00b894;
+    color: white;
+}
+.differnt_states:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+   color:  #00b894; 
+}
+@keyframes changetext {
+    0%{content: "Manali";}
+    20%{content: "Kashmir";}
+    40%{content:"jaipur";}
+    60%{content: "Delhi";}
+    80%{content: "Mumbai";}
+    100%{content: "Kerla";}
+}

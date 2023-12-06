@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+          *{
+            margin:   0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+       }
+       body{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        background: linear-gradient(120deg,#2980b9,#8e44ad);
+        height: 100vh;
+        overflow: hidden;
+       }
+       .signup{
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%,-50%);
+        margin: 20px;
+        padding: 35px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+ }
+ .signup h1 {
+     color: #333;
+     margin-bottom: 30px;
+ }
+ .signup div {
+     margin-bottom: 15px;
+ }
+ .signup label {
+     display: block;
+     margin-bottom: 5px;
+ }
+ .signup input[type="text"], .signup input[type="password"], .signup input[type="number"] {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+ }
+ .signup button {
+     background: #2980b9;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+    </style>
+</head>
+<body>
+    <form action="/register" method="post">
+    <div class="signup">
+        <h1>Sign up</h1>
+        <div class="name">
+        <label for="name"><B>Name</B></label>
+        <input type="text" placeholder="Enter Name" name=" name" required>
+    </div>
+    <div class="email">
+            <label for="email"><B>Email</B></label>
+            <input type="text"placeholder="Enter Email" name="email" required>
+        </div>
+        <div class="gender">
+            <label for="gender"><b>Male</b></label required>
+            <input type="radio" id="Male" name="gender">
+            <label for="gender"><b>Female</b></label required>
+                <input type="radio" id="Female" name="gender">
+                <label for="gender"><b>Others</b></label required>
+                    <input type="radio" id="Others" name="gender">
+        </div>
+        <div class="password">
+            <label for="password"><b>Set password</b></label>
+            <input type="password" placeholder="Set password" name="password" required>
+        </div>
+        <div class="age">
+            <label for="age"><b>Age</b></label>
+            <input type="number" placeholder="Enter Age" name="age" required>
+             <button type="submit">signup</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

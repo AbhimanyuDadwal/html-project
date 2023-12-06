@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0,0,0,0.34), rgba(0, 0, 0, 0.5));
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="datetime-local"], input[type="tel"], input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    .a{
+          
+    text-align: center;
+    text-decoration: none;
+    background-color: cornflowerblue;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;    
+  }
+        
+        h2{
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+
+        }
+  
+
+</style>
+<body>
+    
+
+
+
+<h2>Trip Booking Form</h2>
+
+<form action="booking.php" method="post">
+  <div>
+    <label for="name"> <b>Name:</b>:</label><br>
+    <input type="text" id="name" name="name">
+  </div>
+  <div>
+    <label for="email"><b>Email:</b></label><br>
+    <input type="text" id="email" name="email">
+  </div>
+  <div>
+    <label for="date_and_time"><b>Date and Time:</b></label><br>
+    <input type="datetime-local" id="date_and_time" name="date_and_time">
+  </div>
+  <div>
+    <label for="phone_number"><b>Phone Number:</b></label><br>
+    <input type="tel" id="phone_number" name="phone_number">
+  </div>
+  <div>
+    <label for="days"><b>Days:</b></label><br>
+    <input type="number" id="days" name="days">
+  </div>
+  <div>
+    <label for="nights"><b>Nights:</b><label><br>
+    <input type="number" id="nights" name="nights">
+  </div>
+  <div>
+    <input type="checkbox" id="breakfast_included" name="breakfast_included">
+    <label for="breakfast_included">Breakfast Included</label>
+  </div>
+  
+    <input type="submit" value="Submit">
+  </form> 
+
+
+
+</body>
+</html>
